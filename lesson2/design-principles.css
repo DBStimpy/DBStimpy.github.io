@@ -1,17 +1,20 @@
+html{
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
 body{
     margin: .5rem;
     padding: .5rem;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .header{
     display: flex;
-    background-color: #114c50;
+    background-color: #008dcd;
     color: #ffffff;
     justify-content: center;
     padding: 1rem;
@@ -27,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-    background-color: #114c50;
+    background-color: #008dcd;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card h2 {
-    background-color: #1b7e85;
+    background-color: #008dcd;
     display: block;
     padding: 10px 10px;
     border-radius: .5rem;
@@ -76,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card a {
-    background: #114c50;
+    background: #008dcd;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
