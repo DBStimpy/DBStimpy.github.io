@@ -4,5 +4,7 @@ let time = lastModified.toLocaleString('en-GB', {hour: "2-digit", minute: "2-dig
 let dateTime = `Last Updated: ${fullDate} ${time}`;
 document.getElementById("lastModified").innerHTML = dateTime;
 
+let fullYear = lastModified.toLocaleString('en-US', {year: "numeric"});
+let date = `copyrightyear: ${fullYear}`;
 
-document.getElementById("copyrightyear").innerHTML = d.getFullYear();
+document.getElementById("copyrightyear").innerHTML = fullYear;
