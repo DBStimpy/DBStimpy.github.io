@@ -5,4 +5,4 @@ let dateTime = `Last Updated: ${fullDate} ${time}`;
 document.getElementById("lastModified").innerHTML = dateTime;
 
 
-document.getElementById("copyrightyear").innerHTML = date.getFullYear();
+document.getElementById("copyrightyear").innerHTML = d.getFullYear();
