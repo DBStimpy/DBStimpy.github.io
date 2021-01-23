@@ -8,7 +8,7 @@ body{
 .header{
     display: flex;
     background-color: #008dcd;
-    color: #ffffff;
+    color: black;
     justify-content: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -26,11 +26,11 @@ body{
 
 .footer {
     background-color: #008dcd;
-    color: #ffffff;
+    color: black;
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
-    font-size: .9rem;
+    font-size: 12px;
 }
 
 .footer span {
