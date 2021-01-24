@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
     background-color: #008dcd;
-    color: #ffffff;
+    color: black;
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 10px;
     border-radius: .5rem;
     text-align: center;
-    color: #f7f7f7;
+    color: black;
     width: 50%;
     margin: 10px auto;
 }
