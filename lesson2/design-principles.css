@@ -6,6 +6,7 @@ body{
     padding: .5rem;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    width: 750px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,3 +97,4 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px 10px;
     line-height: 1.4rem;
     font-size: 1.2rem;
+}
