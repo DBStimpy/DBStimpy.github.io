@@ -1,6 +1,7 @@
 body {
    font-family: 'Roboto', Helvetica, Arial, sans-serif;
    font-size: 14px;
+   margin: 0 auto;
 }
 h1,h2,h3, #title, #motto {
    font-family: 'Roboto', Helvetica, Arial, sans-serif;
