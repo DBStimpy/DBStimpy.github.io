@@ -47,7 +47,7 @@ nav li a {
 }
 
 nav li a:hover {
-   color: #fff800;
+   color: #FFC20E;
 }
 nav ul {
    margin: 0;
@@ -95,13 +95,13 @@ nav ul {
    padding:10px;
 }
 #updated {
-   color: #fff800;
+   color: #FFC20E;
 }
 #vsitemap {
    width: 100%;
 }
 .hovered {
-   color: #fff800;
+   color: #FFC20E;
    transform: scale(1.1);
 }
 .logo {
