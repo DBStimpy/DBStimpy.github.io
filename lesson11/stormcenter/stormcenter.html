@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <meta name="description" content="Week 8 - Storm Center">
+   <title>WeatherGo - Storm Center</title>
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="small.css">
+   <link rel="stylesheet" href="medium.css">
+   <link rel="stylesheet" href="large.css">
+</head>
+
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="https://dbstimpy.github.io/lesson3/weather-07-256.webp">
+      <div id="title">WeatherGo</div>
+      <div id="motto">Weather on the go!</div>
+      <nav>
+
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="#">Home</a></li>
+            <li><a title="Preston" href="DBStimpy.github.io/lesson11/preston/preston.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a class="active" title="Storm Center" href="https://dbstimpy.github.io/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="DBStimpy.github.io/lesson11/gallery/gallery.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <form method="GET" action="https://dbstimpy.github.io/lesson11/stormcenter/thanks.html">
+         <div id="stormcenter">
+            <h2>Share your weather experience</h2>
+            <fieldset>
+               <legend>Personal Information</legend>
+            <div class="formfield">
+               <label>Full Name: <input type="text" name="fullname" id="fullname" title="Must be at least 3 characters" pattern="^[a-zA-Z\s\.\-]{3,}$"
+                     required></label>
+            </div>
+            <div class="formfield">
+               <label>Email: <input type="email" name="email" id="email" placeholder="email@address.com"></label>
+            </div>
+            <div class="formfield">
+               <label>Phone Number: <input type="tel" name="phonenumber" id="phonenumber" minlength="10" placeholder="999-999-9999" required></label>
+            </div>
+            <div class="formfield">
+               <label>Zip Code: <input type="number" name="zipcode" id="zipcode" min="9999" required></label>
+            </div>
+         </fieldset>
+         <fieldset>
+            <legend>Storm Information</legend>
+            <div class="formfield">
+               <label>Storm Date: <input type="date" name="stormdate" id="stormdate"></label>
+            </div>
+            <div class="formfield">
+               <label>Storm Type: <input list="stormtypes" name="stormtype" id="stormtype">
+                  <datalist id="stormtypes">
+                     <option value="Flash Flood">
+                     <option value="Hail">
+                     <option value="Hurricane">
+                     <option value="Thunderstorm">
+                     <option value="Tornado">
+                  </datalist>
+               </label>
+            </div>
+            <div class="formfield">
+               <label><span id="severitydisplay">Severity: 5</span><input type="range" name="severity" id="severity" min="1" max="10" onchange="updateSeverity(this.value);" value="5"></label>
+            </div>
+            <div class="formfield">
+               <label class="storm">Storm Region:
+                  <select name="region">
+                     <option value="" selected disabled>Select Region...</option>
+                     <option value="preston">Preston</option>
+                     <option value="soda springs">Soda Springs</option>
+                     <option value="fish haven">Fish Haven</option>
+                  </select>
+               </label>
+             </div>
+            <div class="formfield">
+               <label class="dangerlevel">User Danger Level:</label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Yes"><span class="optionvalue">Yes</span></label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="Maybe"><span class="optionvalue">Maybe</span></label>
+               <label class="dangerlevel"><input type="radio" name="userindangerlevel" value="No"><span class="optionvalue">No</span></label>
+            </div>
+            <div class="formfield">
+               <label>Comments: <textarea name="comments" id="comments"></textarea></label>
+            </div>
+         </fieldset>
+         <div class="center">
+            <input name="submit" id="submit" type="submit" value="Share your experience">
+         </div>
+         </div>
+      </form>
+   </main>
+   <footer class="footer">
+      <p>
+          &copy; <span id ="copyrightyear"></span> | Dallin Stimpson | Oregon | <a id="byui_link" href="https://www.byui.edu/online">BYU-I Online Learning</a>
+      </p>
+      <p class="last-update" id="lastModified"></p>
+  </footer>
+  <script src="index.js" defer></script>
+  </html>
