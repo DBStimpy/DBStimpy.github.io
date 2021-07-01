@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 9 - Home">
+  <title>WeatherGo - Home</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="small.css">
+  <link rel="stylesheet" href="medium.css">
+  <link rel="stylesheet" href="large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="logo.jpg">
+      <div id="title">WeatherGo</div>
+      <div id="motto">Weather on the go!</div>
+      <nav>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a class="active" title="Home" href="DBStimpy.github.io/lesson11/index/index.html">Home</a></li>
+            <li><a title="Preston" href="DBStimpy.github.io/lesson11/preston/preston.html">Preston</a></li>
+            <li><a title="Soda Springs" href="#">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="#">Fish Haven</a></li>
+            <li><a title="Storm Center" href="https://dbstimpy.github.io/lesson11/stormcenter/stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="DBStimpy.github.io/lesson11/gallery/gallery.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main id="cities">
+    <section><div class="city_home city_detail" id="p_text">
+        <h2>Preston</h2>
+        <h5>Home of Napoleon Dynamite.</h5>
+        <h4>Year Founded: 1866</h4>
+        <h4>Population: 5204</h4>
+        <h4>Annual Rain Fall: 16.65</h4>
+      </div>
+      <img src="preston.jpg" class="city_home city_image" alt="Preston" id="p_image"></section>
+      <section><div class="city_home city_detail" id="sp_text">
+          <h2>Soda Springs</h2>
+          <h5>Historic Oregon Trail Oasis. The Soda is on Us.</h5>
+          <h4>Year Founded: 1858</h4>
+          <h4>Population: 2985</h4>
+          <h4>Annual Rain Fall: 15.75</h4>
+      </div>
+      <img src="sodasprings.jpg" class="city_home city_image" alt="Soda Springs" id="sp_image"></section>
+      <section><div class="city_home city_detail" id="fh_text">
+          <h2>Fish Haven</h2>
+          <h5>This is Fish Heaven.</h5>
+          <h4>Year Founded: 1864</h4>
+          <h4>Population: 501</h4>
+          <h4>Annual Rain Fall: 14.2</h4>
+      </div>
+      <img src="fishhaven.jpg" class="city_home city_image" alt="Fish Haven" id="fh_image"></section>
+      
+   </main>
+   <footer class="footer">
+      <p>
+          &copy; <span id ="copyrightyear"></span> | Dallin Stimpson | Oregon | <a id="byui_link" href="https://www.byui.edu/online">BYU-I Online Learning</a>
+      </p>
+      <p class="last-update" id="lastModified"></p>
+  </footer>
+  <script src="index.js" defer></script>
+  </html>
