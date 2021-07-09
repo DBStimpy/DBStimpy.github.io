@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Fish Haven Page">
+  <title>WeatherGo - Fish Haven</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="small.css">
+  <link rel="stylesheet" href="medium.css">
+  <link rel="stylesheet" href="large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="logo.jpg">
+      <div id="title">WeatherGo</div>
+      <div id="motto">Weather on the go!</div>
+      <nav>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="index.html">Home</a></li>
+            <li><a title="Preston" href="preston.html">Preston</a></li>
+            <li><a title="Soda Springs" href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="active" title="Fish Haven" href="fishhaven.html">Fish Haven</a></li>
+            <li><a title="Storm Center" href="stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="gallery.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Fish Haven</h1>
+      <section id="hero">
+         <picture>
+            <source media="(max-width: 400px)" srcset="fishhaven_hero_400.jpg">
+            <source media="(max-width: 800px)" srcset="fishhaven_hero_800.jpg">
+            <img src="fishhaven_hero_1200.jpg" alt="Fish Haven Lake">
+        </picture>
+         <div id="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span id="hightemp"></span>&#8457;</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+         </div>
+      </section>
+      
+      <section id="forecast">
+         <h3>5 Day Forecast</h3>
+            <div class="forecast" id="forecast1">
+                <h3 id="day1">Day 1</h3>
+                <div><img src="#" alt="" id='icon1'></div>
+                <div id="temp1"></div>
+                <div id="condition1"></div>
+                <div id="weather1"></div>
+            </div>
+            <div class="forecast" id="forecast2">
+                <h3 id="day2">Day 2</h3>
+                <div><img src="#" alt="" id='icon2'></div>
+                <div id="temp2"></div>
+                <div id="condition2"></div>
+                <div id="weather2"></div>
+            </div>
+            <div class="forecast" id="forecast3">
+                <h3 id="day3">Day 3</h3>
+                <div><img src="#" alt="" id='icon3'></div>
+                <div id="temp3"></div>
+                <div id="condition3"></div>
+                <div id="weather3"></div>
+            </div>
+            <div class="forecast" id="forecast4">
+                <h3 id="day4">Day 4</h3>
+                <div><img src="#" alt="" id='icon4'></div>
+                <div id="temp4"></div>
+                <div id="condition4"></div>
+                <div id="weather4"></div>
+            </div>
+            <div class="forecast" id="forecast5">
+                <h3 id="day5">Day 5</h3>
+                <div><img src="#" alt="" id='icon5'></div>
+                <div id="temp5"></div>
+                <div id="condition5"></div>
+                <div id="weather5"></div>
+            </div>
+      </section>
+      <article>
+         <div id="article-content">
+            <h2>Paradise</h2>
+            <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.</p>
+            <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.</p>
+            <p>But they don't live there. It's different living in Fish Haven. The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains.</p>          </div>
+         <img alt="Fish Haven Cabin" id="article-image" src="fishhaven-article.jpg">
+      </article>
+            <p>contact@weathergo.com</p>
+         </div>
+      </section>
+   </main>   
+   <footer class="footer">
+    <p>
+        &copy; <span id ="copyrightyear"></span> | Dallin Stimpson | Oregon | <a id="byui_link" href="https://www.byui.edu/online">BYU-I Online Learning</a>
+    </p>
+    <p class="last-update" id="lastModified"></p>
+</footer>
+<script src="index.js" defer></script>
+<script src="site.js"></script>
+<script>
+      currentWeather('5585010');
+      buildForecast('5585010');
+      getTownEvents("Fish Haven");
+</script>
+</html>

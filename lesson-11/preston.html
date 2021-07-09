@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 10 - Preston Page">
+  <title>WeatherGo - Preston</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="small.css">
+  <link rel="stylesheet" href="medium.css">
+  <link rel="stylesheet" href="large.css">
+</head>
+<body>
+   <div id="alert"></div>
+   <header>
+      <img alt="Logo" id="logo" src="logo.jpg">
+      <div id="title">WeatherGo</div>
+      <div id="motto">Weather on the go!</div>
+      <nav>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="Home" href="index.html">Home</a></li>
+            <li><a class="active" title="Preston" href="preston.html">Preston</a></li>
+            <li><a title="Soda Springs" href="sodasprings.html">Soda Springs</a></li>
+            <li><a title="Fish Haven" href="fishhaven.html">Fish Haven</a></li>
+            <li><a title="Storm Center" href="stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="gallery.html">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h1 class="page_title">Preston</h1>
+      <section id="hero">
+         <picture>
+            <source media="(max-width: 400px)" srcset="preston_hero_400.jpg">
+            <source media="(max-width: 800px)" srcset="preston_hero_800.jpg">
+            <img src="preston_hero_1200.jpg" alt="Preston Landscape">
+        </picture>
+         <div id="weather-summary">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="current"></span></p>
+            <p>High: <span id="hightemp"></span>&#8457;</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+         </div>
+      </section>
+      
+      <section id="forecast">
+         <h3>5 Day Forecast</h3>
+            <div class="forecast" id="forecast1">
+                <h3 id="day1">Day 1</h3>
+                <div><img src="#" alt="" id='icon1'></div>
+                <div id="temp1"></div>
+                <div id="condition1"></div>
+                <div id="weather1"></div>
+            </div>
+            <div class="forecast" id="forecast2">
+                <h3 id="day2">Day 2</h3>
+                <div><img src="#" alt="" id='icon2'></div>
+                <div id="temp2"></div>
+                <div id="condition2"></div>
+                <div id="weather2"></div>
+            </div>
+            <div class="forecast" id="forecast3">
+                <h3 id="day3">Day 3</h3>
+                <div><img src="#" alt="" id='icon3'></div>
+                <div id="temp3"></div>
+                <div id="condition3"></div>
+                <div id="weather3"></div>
+            </div>
+            <div class="forecast" id="forecast4">
+                <h3 id="day4">Day 4</h3>
+                <div><img src="#" alt="" id='icon4'></div>
+                <div id="temp4"></div>
+                <div id="condition4"></div>
+                <div id="weather4"></div>
+            </div>
+            <div class="forecast" id="forecast5">
+                <h3 id="day5">Day 5</h3>
+                <div><img src="#" alt="" id='icon5'></div>
+                <div id="temp5"></div>
+                <div id="condition5"></div>
+                <div id="weather5"></div>
+            </div>
+      </section>
+      <article>
+         <div id="article-content">
+            <h2>Spring Heat</h2>
+            <p>The weather is getting dangerously hotter. Stay inside and blast the A/C to as low as you can.</p>
+
+            <p>Protect yourself and do not go outside.</p>
+            
+            <p>We hope for rain in the next week with cooler weather.</p>
+         </div>
+      </article>
+      <section id="map-info">
+         <img alt="Preston" title="Hero Image" src="preston.png">
+         <div id="map"></div>
+         <div id="contact-info">
+            <p>contact@weathergo.com</p>
+         </div>
+      </section>
+   </main>   
+   <footer>
+    <p>
+        &copy; <span id ="copyrightyear"></span> | Dallin Stimpson | Oregon | <a id="byui_link" href="https://www.byui.edu/online">BYU-I Online Learning</a>            
+    </p>
+    <p class="last-update" id="lastModified"></p>
+    <script src="index.js"></script>
+   </footer>
+   <script src="site.js"></script>
+   <script>
+      currentWeather('5604473');
+      buildForecast('5604473');
+      prestonAlert();
+    </script>
+</body>
+</html>
